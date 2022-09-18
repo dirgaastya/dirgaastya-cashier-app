@@ -1,0 +1,31 @@
+PROGRAM CASHIER_APP
+
+READ String Item
+READ Real Price
+READ Integer Qty
+READ Real Total
+READ and WRITE Boolean inputItem with True
+READ String addItem
+
+WHILE inputItem!=False
+    Input Item
+    Input Price
+    Input Qty
+    While Qty = 0
+        If Qty = 0
+            PRINT "Qty cannot 0"
+            Input Qty
+        End
+    End
+    WRITE Total = Price * Qty
+    PRINT "Item name = " & Item
+    PRINT "Total = " & Total
+    PRINT "Add any item? yes / no"
+    Input addItem
+    If addItem == "yes"
+    Else
+        WRITE inputItem = False
+    End
+End
+
+
